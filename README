@@ -1,0 +1,23 @@
+NANAO MS9-29
+
+This was made from sschematics found everywhere but not
+very usefull and an ms9-29 board.
+
+
+
+
+This schematic needs some review, some rechecks etc etc etc.
+
+It uses KiCad 5.1
+Describe me fixes or send PR for KiCad 5.1
+
+
+
+BODGES
+
+
+
+TODO
+
+compare component list from this schematic and component list
+from manual
