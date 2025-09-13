@@ -5,16 +5,16 @@ $Descr A4 11693 8268
 encoding utf-8
 Sheet 2 2
 Title "NANAO MS9-29"
-Date "2025-08-07"
-Rev "1.0"
+Date "2025-09-13"
+Rev "1.1"
 Comp "Franck BOURDONNEC"
 Comment1 ""
 Comment2 ""
-Comment3 ""
+Comment3 "https://buymeacoffee.com/franck78"
 Comment4 "https://github.com/Franck78/NANAO-MS9_29"
 $EndDescr
 $Comp
-L nanao:Degauss CN903
+L nanao:COIL CN903
 U 1 1 69BBC6A8
 P 4350 7000
 F 0 "CN903" H 4250 7300 50  0000 L CNN
@@ -890,7 +890,7 @@ E3 5E 21 3C 78 2D E3 AF EB 3C 6F 6A F1 C8 EB FE B8 90 B4 A5 B7 82 B6 A0 DC D2 AD
 EB 68 0B CA 2D DD 3A FA 7F A9 D0 00 7E CF 21 09 CB 00 00 00 00 49 45 4E 44 AE 42 60 82 
 EndData
 $EndBitmap
-Text Notes 7700 5750 0    24   ~ 0
+Text Notes 7800 5700 0    24   ~ 0
 (7 Watts)
 $Comp
 L power:GND #PWR022
@@ -974,7 +974,7 @@ L Device:R R902
 U 1 1 6A35FF7F
 P 7800 5600
 F 0 "R902" V 7700 5700 50  0000 R CNN
-F 1 "1" V 7800 5600 50  0000 R CNN
+F 1 "1" V 7900 5550 50  0000 R CNN
 F 2 "" V 7730 5600 50  0001 C CNN
 F 3 "" H 7800 5600 50  0001 C CNN
 	1    7800 5600
@@ -989,11 +989,11 @@ Wire Wire Line
 Wire Wire Line
 	7000 5600 6500 5600
 Wire Wire Line
-	4050 6800 3600 6800
+	4250 6800 3600 6800
 Wire Wire Line
 	3600 6800 3600 6900
 $Comp
-L nanao:TR T901
+L nanao:MS9_T901 T901
 U 1 1 695B7093
 P 5850 1900
 F 0 "T901" H 5600 2300 50  0000 C CNN
@@ -1030,7 +1030,7 @@ L Device:R R906
 U 1 1 6C10CD52
 P 2100 2250
 F 0 "R906" H 2050 2200 50  0000 R CNN
-F 1 "220K" H 2050 2300 50  0000 R CNN
+F 1 "100" H 2050 2300 50  0000 R CNN
 F 2 "" V 2030 2250 50  0001 C CNN
 F 3 "" H 2100 2250 50  0001 C CNN
 	1    2100 2250
@@ -1773,7 +1773,7 @@ Over voltage limit
 Wire Wire Line
 	2400 7000 2850 7000
 Wire Wire Line
-	3850 7200 3950 7200
+	3850 7200 4050 7200
 $Comp
 L power:GND #PWR0202
 U 1 1 95B4B056
@@ -1901,7 +1901,7 @@ $EndComp
 Wire Wire Line
 	6800 2800 7700 2800
 Wire Wire Line
-	6800 2300 7050 2300
+	6800 2300 7100 2300
 $Comp
 L Device:CP C952
 U 1 1 982D93F9
@@ -1946,12 +1946,12 @@ Wire Wire Line
 $Comp
 L Device:R R968
 U 1 1 9A384C45
-P 8650 1050
-F 0 "R968" H 8900 1000 50  0000 R CNN
-F 1 "68K" H 8850 1100 50  0000 R CNN
-F 2 "" V 8580 1050 50  0001 C CNN
-F 3 "" H 8650 1050 50  0001 C CNN
-	1    8650 1050
+P 8650 850
+F 0 "R968" H 8900 800 50  0000 R CNN
+F 1 "68K" H 8850 900 50  0000 R CNN
+F 2 "" V 8580 850 50  0001 C CNN
+F 3 "" H 8650 850 50  0001 C CNN
+	1    8650 850 
 	-1   0    0    1   
 $EndComp
 Wire Wire Line
@@ -1970,19 +1970,18 @@ F 3 "" H 8200 1150 50  0001 C CNN
 	-1   0    0    1   
 $EndComp
 Wire Wire Line
-	8650 750  8650 900 
+	8650 600  8650 700 
 Wire Wire Line
-	8650 1200 8650 1350
+	8650 1000 8650 1150
 Wire Wire Line
-	8650 1350 8600 1350
+	8650 1150 8650 1250
 Connection ~ 8200 1500
 Wire Wire Line
-	8650 750  8950 750 
+	8650 600  8950 600 
 Wire Wire Line
-	8950 1200 8950 1350
+	8950 1000 8950 1150
 Wire Wire Line
-	8950 1350 8650 1350
-Connection ~ 8650 1350
+	8950 1150 8650 1150
 $Comp
 L Device:L_Core_Ferrite L951
 U 1 1 9B3D0E84
@@ -1997,23 +1996,23 @@ $EndComp
 $Comp
 L Device:CP C953
 U 1 1 9B62F7F0
-P 10550 1050
-F 0 "C953" H 10650 1100 50  0000 L CNN
-F 1 "47µ/160v" H 10650 1000 50  0000 L CNN
-F 2 "" H 10588 900 50  0001 C CNN
-F 3 "" H 10550 1050 50  0001 C CNN
-	1    10550 1050
+P 10350 1050
+F 0 "C953" H 10450 1100 50  0000 L CNN
+F 1 "47µ/160v" H 10450 1000 50  0000 L CNN
+F 2 "" H 10388 900 50  0001 C CNN
+F 3 "" H 10350 1050 50  0001 C CNN
+	1    10350 1050
 	1    0    0    -1  
 $EndComp
 $Comp
 L power:GND #PWR0214
 U 1 1 9B632E32
-P 10550 1200
-F 0 "#PWR0214" H 10550 950 50  0001 C CNN
-F 1 "GND" H 10555 1027 50  0001 C CNN
-F 2 "" H 10550 1200 50  0001 C CNN
-F 3 "" H 10550 1200 50  0001 C CNN
-	1    10550 1200
+P 10350 1200
+F 0 "#PWR0214" H 10350 950 50  0001 C CNN
+F 1 "GND" H 10355 1027 50  0001 C CNN
+F 2 "" H 10350 1200 50  0001 C CNN
+F 3 "" H 10350 1200 50  0001 C CNN
+	1    10350 1200
 	1    0    0    -1  
 $EndComp
 $Comp
@@ -2045,7 +2044,7 @@ L Regulator_Linear:LM7812_TO220 U951
 U 1 1 9C1F9695
 P 8450 2800
 F 0 "U951" H 8750 2650 50  0000 C CNN
-F 1 "7812" H 8450 2951 50  0000 C CNN
+F 1 "7812" H 8450 2950 50  0000 C CNN
 F 2 "Package_TO_SOT_THT:TO-220-3_Vertical" H 8450 3025 50  0001 C CIN
 F 3 "https://www.onsemi.cn/PowerSolutions/document/MC7800-D.PDF" H 8450 2750 50  0001 C CNN
 	1    8450 2800
@@ -2406,15 +2405,15 @@ F 3 "" H 10550 3050 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L Device:Jumper_NC_Small J526
+L nanao:jumper J526
 U 1 1 7CAC58E0
 P 7150 2300
-F 0 "J526" H 7150 2250 50  0000 C CNN
+F 0 "J526" V 7200 2300 50  0000 C CNN
 F 1 "Jumper_NO_Small" H 7150 2394 50  0001 C CNN
 F 2 "" H 7150 2300 50  0001 C CNN
 F 3 "" H 7150 2300 50  0001 C CNN
 	1    7150 2300
-	1    0    0    -1  
+	0    1    1    0   
 $EndComp
 Wire Wire Line
 	9950 1500 9950 900 
@@ -2422,27 +2421,27 @@ Connection ~ 9100 2800
 Wire Wire Line
 	9100 3750 8500 3750
 $Comp
-L Device:Jumper_NC_Small J476
+L nanao:jumper J476
 U 1 1 931039B1
 P 7450 1500
-F 0 "J476" H 7450 1450 50  0000 C CNN
+F 0 "J476" V 7500 1500 50  0000 C CNN
 F 1 "Jumper_NO_Small" H 7450 1594 50  0001 C CNN
 F 2 "" H 7450 1500 50  0001 C CNN
 F 3 "" H 7450 1500 50  0001 C CNN
 	1    7450 1500
-	1    0    0    -1  
+	0    1    1    0   
 $EndComp
 Wire Wire Line
-	7550 1500 7600 1500
+	7500 1500 7600 1500
 $Comp
-L Device:Jumper_NC_Small J478
+L nanao:jumper J478
 U 1 1 935942C9
-P 8500 1350
-F 0 "J478" H 8500 1300 50  0000 C CNN
-F 1 "Jumper_NO_Small" H 8500 1444 50  0001 C CNN
-F 2 "" H 8500 1350 50  0001 C CNN
-F 3 "" H 8500 1350 50  0001 C CNN
-	1    8500 1350
+P 8650 1300
+F 0 "J478" V 8700 1300 50  0000 C CNN
+F 1 "Jumper_NO_Small" H 8650 1394 50  0001 C CNN
+F 2 "" H 8650 1300 50  0001 C CNN
+F 3 "" H 8650 1300 50  0001 C CNN
+	1    8650 1300
 	1    0    0    -1  
 $EndComp
 Wire Wire Line
@@ -2450,28 +2449,21 @@ Wire Wire Line
 Wire Wire Line
 	8200 2000 8400 2000
 Wire Wire Line
-	8200 1500 8350 1500
-Wire Wire Line
-	8400 1350 8350 1350
-Wire Wire Line
-	8350 1350 8350 1500
-Connection ~ 8350 1500
-Wire Wire Line
-	8350 1500 8950 1500
-Connection ~ 8950 750 
+	8650 1350 8650 1500
+Connection ~ 8950 600 
 $Comp
 L Connector:TestPoint TP2
 U 1 1 9459D1EF
-P 7650 800
-F 0 "TP2" H 7708 872 50  0000 L CNN
-F 1 "N" H 7708 827 50  0001 L CNN
-F 2 "" H 7850 800 50  0001 C CNN
-F 3 "" H 7850 800 50  0001 C CNN
-	1    7650 800 
+P 9250 1000
+F 0 "TP2" H 9308 1072 50  0000 L CNN
+F 1 "N" H 9308 1027 50  0001 L CNN
+F 2 "" H 9450 1000 50  0001 C CNN
+F 3 "" H 9450 1000 50  0001 C CNN
+	1    9250 1000
 	1    0    0    -1  
 $EndComp
 Wire Wire Line
-	7650 800  7650 950 
+	9250 1000 9250 1150
 Text HLabel 950  6250 0    50   Output ~ 0
 Video_R
 Text HLabel 950  6350 0    50   Output ~ 0
@@ -2624,21 +2616,21 @@ Wire Wire Line
 Wire Wire Line
 	5300 5900 5650 5900
 Wire Wire Line
-	2400 7400 3050 7400
+	2400 7400 3100 7400
 Wire Wire Line
 	5650 7400 5650 5900
 Connection ~ 5650 5900
 Wire Wire Line
 	5650 5900 6200 5900
 Wire Wire Line
-	3950 7200 3950 7350
+	4050 7200 4050 7350
 Wire Wire Line
-	3950 7350 5600 7350
+	4050 7350 5600 7350
 Wire Wire Line
 	5600 7350 5600 5300
-Connection ~ 3950 7200
+Connection ~ 4050 7200
 Wire Wire Line
-	3950 7200 4050 7200
+	4050 7200 4250 7200
 Connection ~ 5600 5300
 Wire Wire Line
 	5600 5300 6200 5300
@@ -2682,8 +2674,8 @@ Text HLabel 10900 1500 2    50   Output ~ 0
 B+
 Text HLabel 10700 900  2    50   Output ~ 0
 B++
-Text HLabel 10700 750  2    50   Output ~ 0
-B+++
+Text HLabel 10700 600  2    50   Output ~ 0
+r969+
 Text HLabel 10650 3750 2    50   Output ~ 0
 +12V
 Text HLabel 10650 2750 2    50   Output ~ 0
@@ -2697,7 +2689,7 @@ Wire Wire Line
 Text HLabel 10650 3250 2    50   Output ~ 0
 Heater
 Wire Wire Line
-	8950 750  10700 750 
+	8950 600  10700 600 
 Text HLabel 10650 2450 2    50   Output ~ 0
 CC-PROT
 Wire Wire Line
@@ -2846,32 +2838,26 @@ Wire Wire Line
 Connection ~ 7050 1500
 Connection ~ 7050 950 
 Wire Wire Line
-	7050 1500 7350 1500
-Wire Wire Line
-	7050 950  7650 950 
+	7050 1500 7400 1500
 Connection ~ 9500 2000
 Wire Wire Line
 	9500 2000 9500 4400
-Connection ~ 7650 950 
 Wire Wire Line
-	7650 950  8200 950 
+	8650 600  8450 600 
 Wire Wire Line
-	8650 750  8200 750 
+	8200 600  8200 950 
+Connection ~ 8650 600 
 Wire Wire Line
-	8200 750  8200 950 
-Connection ~ 8650 750 
-Connection ~ 8200 950 
-Wire Wire Line
-	8950 750  8950 900 
+	8950 600  8950 700 
 $Comp
 L Device:R R969
 U 1 1 9ACD337C
-P 8950 1050
-F 0 "R969" H 9200 1000 50  0000 R CNN
-F 1 "68K" H 9150 1100 50  0000 R CNN
-F 2 "" V 8880 1050 50  0001 C CNN
-F 3 "" H 8950 1050 50  0001 C CNN
-	1    8950 1050
+P 8950 850
+F 0 "R969" H 9200 800 50  0000 R CNN
+F 1 "68K" H 9150 900 50  0000 R CNN
+F 2 "" V 8880 850 50  0001 C CNN
+F 3 "" H 8950 850 50  0001 C CNN
+	1    8950 850 
 	-1   0    0    1   
 $EndComp
 Connection ~ 9100 3750
@@ -2886,17 +2872,14 @@ Connection ~ 10550 2750
 Wire Wire Line
 	9650 2750 9800 2750
 Wire Wire Line
-	9950 900  10550 900 
-Connection ~ 10550 900 
-Wire Wire Line
-	10550 900  10700 900 
+	9950 900  10350 900 
 Wire Wire Line
 	10350 2750 10550 2750
 Connection ~ 9800 2750
 Wire Wire Line
 	9800 2750 10050 2750
 Wire Wire Line
-	7250 2300 9650 2300
+	7200 2300 9650 2300
 Text HLabel 10650 6400 2    50   Output ~ 0
 GND
 $Comp
@@ -2955,18 +2938,18 @@ Connection ~ 7600 6000
 Wire Wire Line
 	7600 6000 5850 6000
 $Comp
-L Device:Jumper_NC_Small J449
+L nanao:jumper J449
 U 1 1 8FE345BD
 P 3150 7400
-F 0 "J449" H 3150 7350 50  0000 C CNN
+F 0 "J449" V 3200 7400 50  0000 C CNN
 F 1 "Jumper_NO_Small" H 3150 7494 50  0001 C CNN
 F 2 "" H 3150 7400 50  0001 C CNN
 F 3 "" H 3150 7400 50  0001 C CNN
 	1    3150 7400
-	1    0    0    -1  
+	0    1    1    0   
 $EndComp
 Wire Wire Line
-	3250 7400 5650 7400
+	3200 7400 5650 7400
 $Comp
 L Connector:Conn_01x05_Female CN902
 U 1 1 69C02767
@@ -3113,4 +3096,86 @@ Wire Wire Line
 Connection ~ 10300 2000
 Wire Wire Line
 	10300 2000 10300 2150
+Text Notes 5850 6850 0    50   ~ 0
+B+ adjust: \n76v at 15KHz (do it first)\n116v at 24KHz
+Wire Wire Line
+	7050 950  8200 950 
+$Comp
+L nanao:jumper J525
+U 1 1 6C7867E4
+P 8400 600
+F 0 "J525" V 8450 600 50  0000 C CNN
+F 1 "Jumper_NO_Small" H 8400 694 50  0001 C CNN
+F 2 "" H 8400 600 50  0001 C CNN
+F 3 "" H 8400 600 50  0001 C CNN
+	1    8400 600 
+	0    1    1    0   
+$EndComp
+Wire Wire Line
+	8350 600  8200 600 
+Connection ~ 8200 950 
+Wire Wire Line
+	8950 1150 9250 1150
+Wire Wire Line
+	9600 1150 9600 750 
+Wire Wire Line
+	9600 750  10700 750 
+Connection ~ 8950 1150
+Text HLabel 10700 750  2    50   Output ~ 0
+r969-
+Connection ~ 9250 1150
+Wire Wire Line
+	9250 1150 9600 1150
+Text Notes 9900 750  0    50   ~ 0
+Low/High plug\nshorts R968/R969
+Connection ~ 8650 1150
+Connection ~ 8650 1500
+Wire Wire Line
+	8650 1500 8950 1500
+Wire Wire Line
+	8200 1500 8650 1500
+Connection ~ 10350 900 
+Wire Wire Line
+	10350 900  10700 900 
+Text Notes 650  4550 0    50   ~ 0
+not populated circuitry\nswitches the 15/24\nB+ (shorten R953)\nQ951, ZD951,R951,\nR952, Q952,\nR956, R957
+Text HLabel 7550 2500 0    50   Output ~ 0
+15
+Wire Wire Line
+	7700 2500 7550 2500
+Connection ~ 7700 2500
+Text HLabel 1200 650  0    50   Input ~ 0
+15
+$Comp
+L Connector:Conn_01x02_Male CN951
+U 1 1 745C7F25
+P 1900 750
+F 0 "CN951" H 2300 600 50  0000 R CNN
+F 1 "Conn_01x02_Male" H 1872 633 50  0001 R CNN
+F 2 "" H 1900 750 50  0001 C CNN
+F 3 "" H 1900 750 50  0001 C CNN
+	1    1900 750 
+	-1   0    0    1   
+$EndComp
+Wire Wire Line
+	1200 650  1700 650 
+Wire Wire Line
+	1700 750  1350 750 
+Wire Wire Line
+	1350 750  1350 850 
+$Comp
+L power:GND #PWR?
+U 1 1 74609391
+P 1350 850
+F 0 "#PWR?" H 1350 600 50  0001 C CNN
+F 1 "GND" H 1355 677 50  0001 C CNN
+F 2 "" H 1350 850 50  0001 C CNN
+F 3 "" H 1350 850 50  0001 C CNN
+	1    1350 850 
+	1    0    0    -1  
+$EndComp
+Text Notes 2000 750  0    50   ~ 0
+not populated fan\nconnector (Wire15)
+Text Notes 1850 2250 0    24   ~ 0
+(3 Watts)
 $EndSCHEMATC
