@@ -5,8 +5,8 @@ $Descr A4 11693 8268
 encoding utf-8
 Sheet 2 2
 Title "NANAO MS9-29"
-Date "2025-09-13"
-Rev "1.1"
+Date "2025-09-30"
+Rev "1.2"
 Comp "Franck BOURDONNEC"
 Comment1 ""
 Comment2 ""
