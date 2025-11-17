@@ -693,8 +693,8 @@ F 3 "" H 1950 1300 50  0001 C CNN
 	1    1950 1300
 	0    -1   -1   0   
 $EndComp
-Text Notes 7900 12150 2    24   ~ 0
-(fuse)
+Text Notes 8500 12250 2    24   ~ 0
+(sometimes incorrectly listed as 220K)
 Text Notes 2350 14500 0    79   ~ 16
 H.POS
 $Comp
@@ -11499,10 +11499,12 @@ Wire Wire Line
 Connection ~ 12050 14900
 Wire Wire Line
 	12050 14900 12050 14950
+Text Notes 8250 9450 2    24   ~ 0
+(fuse)
+Text Notes 7900 12200 2    24   ~ 0
+(fuse)
 Wire Bus Line
 	22800 4700 22800 9250
 Wire Bus Line
 	18650 4700 22800 4700
-Text Notes 8250 9450 2    24   ~ 0
-(fuse)
 $EndSCHEMATC
