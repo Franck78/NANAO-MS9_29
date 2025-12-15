@@ -5,8 +5,8 @@ $Descr A2 23386 16535
 encoding utf-8
 Sheet 1 2
 Title "NANAO MS9-29"
-Date "2025-11-17"
-Rev "1.3"
+Date "2025-12-15"
+Rev "1.31"
 Comp "Franck BOURDONNEC"
 Comment1 ""
 Comment2 ""
@@ -11503,6 +11503,8 @@ Text Notes 8250 9450 2    24   ~ 0
 (fuse)
 Text Notes 7900 12200 2    24   ~ 0
 (fuse)
+Text Notes 20650 9500 0    31   ~ 0
+Check your board, service guide MS9-29SU \nsays 1R5 1/4watt lot of variation here !
 Wire Bus Line
 	22800 4700 22800 9250
 Wire Bus Line
