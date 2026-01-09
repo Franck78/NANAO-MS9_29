@@ -5,8 +5,8 @@ $Descr A4 11693 8268
 encoding utf-8
 Sheet 2 2
 Title "NANAO MS9-29"
-Date "2025-12-15"
-Rev "1.31"
+Date "2026-01-09"
+Rev "1.4"
 Comp "Franck BOURDONNEC"
 Comment1 ""
 Comment2 ""
@@ -2561,7 +2561,7 @@ L Device:Fuse F901
 U 1 1 69DA1C64
 P 3500 5850
 F 0 "F901" V 3600 5850 50  0000 C CNN
-F 1 "250v 3A" V 3400 5900 50  0000 C CNN
+F 1 "125v/6.3A(F)" V 3400 5900 50  0000 C CNN
 F 2 "" V 3430 5850 50  0001 C CNN
 F 3 "" H 3500 5850 50  0001 C CNN
 	1    3500 5850
